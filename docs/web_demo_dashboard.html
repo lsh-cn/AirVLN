@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天-地协同智能管护系统</title>
+  <style>
+    body { margin:0; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background:#0b1220; color:#dbeafe; }
+    .header { padding:16px 24px; background:linear-gradient(90deg,#0f172a,#1d4ed8); font-size:22px; font-weight:700; }
+    .sub { font-size:13px; opacity:.9; margin-top:4px; }
+    .grid { display:grid; grid-template-columns: repeat(3,1fr); gap:16px; padding:16px; }
+    .card { background:#111827; border:1px solid #1f2937; border-radius:10px; padding:16px; min-height:180px; box-shadow:0 2px 10px rgba(0,0,0,.25); }
+    .card h3 { margin:0 0 12px; color:#93c5fd; font-size:17px; }
+    .kpi { display:flex; gap:10px; flex-wrap:wrap; }
+    .pill { background:#1e293b; border:1px solid #334155; border-radius:999px; padding:6px 10px; font-size:12px; }
+    ul { margin:8px 0 0 18px; padding:0; }
+    li { margin-bottom:6px; line-height:1.4; }
+    .footer { padding:0 16px 16px; color:#94a3b8; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    天-地协同智能管护系统（Web端展示）
+    <div class="sub">无人机监管与行业应用一体化平台 · 稳定 · 可扩展 · 可快速落地</div>
+  </div>
+  <div class="grid">
+    <section class="card">
+      <h3>1. 飞行任务管理与分析</h3>
+      <div class="kpi">
+        <span class="pill">今日任务 128</span><span class="pill">完成率 94.5%</span><span class="pill">异常 6</span>
+      </div>
+      <ul>
+        <li>任务模板、航线规划、执行全程留痕</li>
+        <li>任务复盘：轨迹 + 视频 + 事件时间线</li>
+        <li>统计分析：时长、覆盖率、异常率</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>2. 飞行控制与调度管理</h3>
+      <div class="kpi">
+        <span class="pill">在线无人机 52</span><span class="pill">平均时延 120ms</span>
+      </div>
+      <ul>
+        <li>实时遥测与远程起降/返航/悬停</li>
+        <li>按区域、优先级、电量自动派单</li>
+        <li>多机协同与冲突规避建议</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>3. AI智能监测分析</h3>
+      <div class="kpi">
+        <span class="pill">识别事件 317</span><span class="pill">准确率 92.3%</span>
+      </div>
+      <ul>
+        <li>烟火、违建、病虫害、漂浮物识别</li>
+        <li>边缘实时识别 + 云端高精复核</li>
+        <li>识别结果自动转工单闭环</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>4. 空域数据管理</h3>
+      <ul>
+        <li>禁飞区、限飞区、临时管制可视化</li>
+        <li>融合气象、地形、关键设施图层</li>
+        <li>飞前合规校验与审批流程联动</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>5. 风险预警与提示机制</h3>
+      <div class="kpi">
+        <span class="pill">紧急 2</span><span class="pill">严重 5</span><span class="pill">一般 14</span>
+      </div>
+      <ul>
+        <li>飞行异常、环境风险、安全隐患实时监测</li>
+        <li>规则引擎 + AI异常检测双引擎</li>
+        <li>告警-派单-处置-复盘全流程闭环</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>6. 全域资源可视化平台</h3>
+      <ul>
+        <li>全域态势图、视频墙、任务进度集中展示</li>
+        <li>多层级驾驶舱（省/市/区/网格）下钻</li>
+        <li>经营分析：利用率、履约率、ROI</li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer">建议技术栈：Vue3 + TypeScript + Spring Cloud + Kafka + PostGIS + ClickHouse + Kubernetes</div>
+</body>
+</html>
